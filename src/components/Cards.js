@@ -1,6 +1,6 @@
-import React from 'react'
-
-import Stories from './Stories'
+import React from 'react';
+import Card from './Card';
+import Stories from './Stories';
 
 const Cards = () => {
   return (
