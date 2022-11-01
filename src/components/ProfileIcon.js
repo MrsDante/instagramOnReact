@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import classNames from 'classnames';
 //import profileImage from '../img/profileImage.jpeg';
 
 const ProfileIcon = (props) => {
@@ -12,14 +13,34 @@ const ProfileIcon = (props) => {
 
   let randomId = getRandomInt(1, 70);
 
-  let profileImage = image ? image : `https://pravatar.cc/150?img=${randomId}`;
+  let profileImage = image ? image : `https://randomfox.ca/images/${randomId}.jpg`;
 
+  //https://randomfox.ca/images/<id>.jpg
 
+  /*const fetch = async () => {
+    const data = await fetch('https://dog.ceo/api/breeds/image/random');
+    const response = await data.json();
+  }*/
+  const classNameForBorder = classNames({
+    "story-border": storyBorder,
+  })
+
+console.log(storyBorder)
   return (
-    <div className={storyBorder ? "story-border" : ""}>
+    <div className={classNameForBorder}>
         <img className={`profileIcon ${iconSize}`} src={profileImage} alt="profile" />
     </div>
   )
 }
 
-export default ProfileIcon
+export default ProfileIcon;
+
+/*
+background: linear-gradient(
+        200deg,
+        #da3394 25%,
+        #e03c67 50%,
+        #f3753b 75%,
+        #f99b4a 100%,
+    );
+    */

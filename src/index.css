@@ -73,13 +73,7 @@ body {
 
 .story-border {
     padding: 2px;
-    background: linear-gradient(
-        200deg,
-        #da3394 25%,
-        #e03c67 50%,
-        #f3753b 75%,
-        #f99b4a 100%,
-    );
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     border-radius: 50%;
 }
 
@@ -108,9 +102,78 @@ body {
     height: 60px;
 }
 
+main {
+    background-color: #fafafa;
+    margin-top: 60px;
+}
+
+main .container {
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+a {
+    text-decoration: none;
+    color: #0095f6;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.stories {
+    display: flex;
+    align-content: center;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 2em 0 1.5em 0;
+    height: 7.4em;
+    overflow: hidden;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0.5em;
+}
+
+.story:first-child {
+    margin-left: 1em;
+}
+
+.story:last-child {
+    margin-right: 1em;
+}
+
+.account-name {
+    font-size: 0.65em;
+    margin: 0.4em;
+}
+
+.cards {
+    width: 600px;
+
+}
+
+
 
 @media only screen and (max-width: 500px) {
     .search {
         display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    main .container {
+      justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .stories {
+        margin: 0 0 0.5em 0;
     }
 }

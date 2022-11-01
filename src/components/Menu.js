@@ -15,7 +15,7 @@ const Menu = () => {
         <img className="icon" src={letterIcon} alt="add" />
         <img className="icon" src={wifiIcon} alt="explore" />
         <img className="icon" src={heartIcon} alt="notificarion" />
-        <ProfileIcon iconSize="small" image={image} storyBorder={true} />
+        <ProfileIcon iconSize="small" image={image} />
     </div>
   )
 }
