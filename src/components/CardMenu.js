@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardMenu = () => {
   return (
-    <div>CardMenu</div>
+    <div className="card-menu"></div>
   )
 }
 
