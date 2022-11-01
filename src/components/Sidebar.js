@@ -7,7 +7,6 @@ import profileImage from '../img/profileImage.jpeg';
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
       <Sticky topOffset={-80}>
         <div className="sidebar">
             <Profile 
@@ -20,7 +19,6 @@ const Sidebar = () => {
             <Footer />
         </div>
       </Sticky>
-    </div>
   )
 }
 
