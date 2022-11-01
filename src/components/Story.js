@@ -1,6 +1,6 @@
 import React from 'react';
-import profileImage from '../img/profileImage.jpeg';
 import users from '../data/users';
+import Profile from './Profile';
 import ProfileIcon from './ProfileIcon';
 
 const Story = () => {
@@ -12,7 +12,7 @@ const Story = () => {
   return (
     <div className="story">
         <ProfileIcon iconSize="big" storyBorder={true} />
-        <span className="account-name"></span>
+        <span className="account-name">{accountName}</span>
     </div>
   )
 }
