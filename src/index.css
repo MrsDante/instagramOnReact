@@ -1,13 +1,116 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    min-width: fit-content;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navigation {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.navigation .container {
+    padding: 1em 0 0.9em 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navigation .container .logo {
+    padding: 0 1em;
+    width: 100px;
+}
+
+.navigation .container .logo:hover {
+    cursor: pointer;
+}
+
+.search-bar {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    min-width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-text {
+    color: #8e8e8e;
+    font-size: 0.85px;
+    font-weight: 300;
+}
+
+.search-icon {
+    width: 40px;
+    opacity: 0.4;
+    margin-right: 0.3em;
+}
+
+.menu {
+    display: flex;
+    padding-right: 1.5em;
+}
+
+.icon {
+    margin-right: 1.5em;
+    width: 43px;
+    height: 43px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.story-border {
+    padding: 2px;
+    background: linear-gradient(
+        200deg,
+        #da3394 25%,
+        #e03c67 50%,
+        #f3753b 75%,
+        #f99b4a 100%,
+    );
+    border-radius: 50%;
+}
+
+.profileIcon {
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+}
+
+.profileIcon:hover {
+    cursor: pointer;
+}
+
+.profileIcon.small {
+    width: 35px;
+    height: 35px;
+}
+
+.profileIcon.medium {
+    width: 45px;
+    height: 45px;
+}
+
+.profileIcon.big {
+    width: 60px;
+    height: 60px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .search {
+        display: none;
+    }
 }
