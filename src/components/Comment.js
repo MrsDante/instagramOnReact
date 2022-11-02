@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Comment = () => {
+const Comment = ({ accountName, comment }) => {
   return (
-    <div className="comment"></div>
+    <div className="comment-container">
+      <div className="account-name">
+        {accountName}
+      </div>
+      <div className="comment">{comment}</div>
+    </div>
   )
 }
 

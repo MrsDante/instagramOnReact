@@ -53,7 +53,53 @@ const Cards = () => {
           accountName="hussss.hushhh"
           storyBorder={true}
           image="https://randomfox.ca/images/34.jpg"
-          comments={commentsOne} />
+          comments={commentsOne}
+          likedByText="foxy.kiss"
+          likedByNumber={897}
+          hours={7} />
+
+        <Card 
+          accountName="malfoy.mather"
+          storyBorder={true}
+          image="https://randomfox.ca/images/64.jpg"
+          comments={commentsOne}
+          likedByText="potter.ass"
+          likedByNumber={1735}
+          hours={12} />
+
+        <Card 
+          accountName="bittle.orange"
+          image="https://randomfox.ca/images/94.jpg"
+          comments={commentsOne}
+          likedByText="foxy.kiss"
+          likedByNumber={8967}
+          hours={1} />
+
+        <Card 
+          accountName="who.is.it"
+          storyBorder={true}
+          image="https://randomfox.ca/images/82.jpg"
+          comments={commentsOne}
+          likedByText="no.one_likes_you"
+          likedByNumber={8}
+          hours={23} />
+
+        <Card 
+          accountName="bookish.foxes"
+          storyBorder={true}
+          image="https://randomfox.ca/images/54.jpg"
+          comments={commentsOne}
+          likedByText="close_your_mont"
+          likedByNumber={45}
+          hours={2} />
+
+        <Card 
+          accountName="hheheheheheheh"
+          image="https://randomfox.ca/images/76.jpg"
+          comments={commentsOne}
+          likedByText="ron_just_ron"
+          likedByNumber={2}
+          hours={22} /> 
     </div>
   )
 }
